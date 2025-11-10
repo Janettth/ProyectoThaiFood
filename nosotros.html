@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/estiloNosotros.css">
+    <script src="https://kit.fontawesome.com/f22edbe064.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.php"><img src="assets/logo2.png" alt=""></a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.php">Menú</a></li>
+        <li><a href="#">Ubicaciones</a></li>
+        <li><a href="nosotros.php">Nosotros</a></li>
+        
+        <?php if (isset($_SESSION['usuario_id'])): ?>
+          <!-- Si el usuario está logueado -->
+          <li><a id="btn_cerrar_sesion" href="PHP/cerrar_sesion.php">Cerrar sesión</a></li>
+        <?php else: ?>
+          <!-- Si el usuario no ha iniciado sesión -->
+          <li><a id="btn_iniciar_sesion" href="InicioSesion.html">Iniciar sesión</a></li>
+        <?php endif; ?>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="carrusel_contenedor">
+
+    <div id="sobreTexto">
+      <img src="assets/logo4.png" alt="">
+    </div>
+    <div class="carrusel_slider">
+      <img src="assets/carrusel/315_Thai_banner.jpg" alt="">
+      <img src="assets/carrusel/1178479-sukhothai-les-photos-du-restaurant-thai.jpg" alt="">
+      <img src="assets/carrusel/Caracteristicas-de-la-gastronomía-Tailandesa.jpg" alt="">
+
+      <img src="assets/carrusel/cocina-Thai--scaled.jpg" alt="">
+      <img src="assets/carrusel/comidatailandesa-portada.jpg" alt="">
+      <img src="assets/carrusel/entradas.jpg" alt="">
+
+      <img src="assets/carrusel/portada-salon-restaurante-tailandes-thai-barcelona.jpg" alt="">
+      <img src="assets/carrusel/restau_thaigarden.webp" alt="">
+    </div>
+
+    <button class="fa-solid fa-circle-arrow-left prev" onclick="plusSlides(-1)"></button>
+    <button class="fa-solid fa-circle-arrow-right next" onclick="plusSlides(1)"></button>
+    
+  </div>
+
+
+  <div class="contenido_texto">
+    <div id="titulo_bienvenida">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nisi autem officia magnam corporis.
+    </div>
+
+    <div id="texto_restaurante">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem eos voluptates impedit unde minus, ullam sed temporibus vel vitae, pariatur dicta cupiditate dolorum veritatis nesciunt magni aspernatur quas expedita itaque a maiores optio recusandae nam. Fugit mollitia ipsa laboriosam?</p>
+    </div>
+  </div>
+
+
+  <footer>
+    <div id="redes_sociales">
+      <a class="fa-brands fa-facebook-f"></a>
+      <a class="fa-brands fa-instagram"></a>
+      <a class="fa-brands fa-x-twitter"></a>
+    </div>
+
+    <div id="contacto">
+      <p>thaifood@gmail.com</p>
+      <p>(656) 345 0098</p>
+    </div>
+
+    <div id="info_desarrollador">
+      <p>Creado por: Janeth Guadalupe Castañeda Romero</p>
+    </div>
+   
+  </footer>
+
+  
+    
+</body>
+
+<script src="JS/funciones.js"></script>
+<script src="JS/carrusel.js"></script>
+</html>

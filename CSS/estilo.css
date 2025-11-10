@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair", serif;
+}
+body{
+    background-color: whitesmoke;
+}
+
+
+/*Estilo del encabesado*/
+header{
+    background-color:#667D41;
+    color: #f5f5f5;
+    height: 150px;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    align-content: center;
+
+    font-family: "Playfair", serif;
+    
+}
+
+
+#logo{
+    align-content: center;
+    padding: 25px;
+    text-align: start;
+
+}
+
+#logo img{
+    width: 65%;
+}
+
+/*Estilo indice*/
+
+nav{
+    align-content: center;
+}
+
+ul{
+    padding: 10px;
+    
+    justify-content:space-between;
+    align-content: center;
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    justify-content: center;
+}
+
+ul li a{
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+ul li:hover{
+  text-shadow: 0 0 10px rgb(255, 255, 255); 
+  transition: text-shadow 0.3s ease; 
+}
+ul li a:hover{
+    color: whitesmoke;
+}
+
+
+
+/*Texto principal*/
+#texto_bienvenida{
+    background-image: url('../assets/comida1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.541);
+    padding: 30px;
+}
+
+#texto_bienvenida p{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 245, 0.607);
+    font-size: 2em;
+    color: black;
+
+    align-content: center;
+    border-radius: 25px;
+}
+
+
+.separador{
+
+    width: 100%;
+    height: auto;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.separador img{
+    margin: 10px;
+    width: 10%;
+}
+
+.separador h3{
+    color: #667D41;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+#contenedor_principal{
+    /*font-family: "Lato", sans-serif;*/
+
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    background-color: whitesmoke;
+
+    display: grid;
+    place-items: center;
+  
+}
+
+
+
+/*Estilo platillos*/
+
+.tipo_menu{
+    
+    width: 80vw;
+    margin: 0 auto;
+    height: 40px ;
+    align-content: center;
+    text-align: start;
+    padding-left: 15px;
+    border-radius: 25px;
+    color: #f5f5f5;
+}
+
+.contenedor_platillos{
+    justify-content: center;
+    width: 60vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.plantilla_info{
+   
+    align-content: center;
+    font-size: 1.3em;
+
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.plantilla_info img{
+    width: 12vw;
+    border-radius: 10px;
+    height: 20vh;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+}
+
+.plantilla_info img:hover{
+    transform: scale(1.06);
+}
+
+
+
+
+/*Diseño tarjeta información*/
+.contenedor_info_platillo{
+    display: none;
+    /*display: grid;*/
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60vw;
+    height: 70%;
+
+    grid-template-rows: 10% auto auto;
+    background-color: #667D41;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+
+    margin-bottom: 30px;
+
+    overflow: scroll;
+
+    z-index: 10;
+}
+
+
+/*boton para salir*/
+.seccion_salir{
+    text-align: end;
+    margin: 5px;
+    align-content: center;
+    padding: 5px;
+    
+}
+
+.seccion_salir button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+.seccion_salir button:hover{
+    transform: scale(1.5);
+    transition: all .3s ease-in-out;
+}
+
+
+/*Inormacion*/
+
+.contenedor_uno{
+    height: auto;
+    display: grid;
+    grid-template-rows: 10% auto;
+}
+
+.titulo{
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.Contenerdor_informacion_importante{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+#primera_seccion{
+    align-content: center;
+    padding: 5px;
+}
+
+#imagen_platillo{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.329);
+}
+#segunda_seccion{
+    text-align: start;
+    padding: 20px;
+}
+
+/*Comentariosss*/
+
+.contenedor_dos{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: rgba(236, 236, 236, 0.258);
+    text-align: start;
+    padding: 20px;
+
+    border-radius: 25px;
+}
+
+.contenedor_dos h3{
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.nombre_usuario{
+    font-weight: bold;
+}
+
+
+.btn_comentar{
+    border: none;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+
+    margin-top:20px ;
+}
+
+.btn_comentar:hover{
+    background-color: #667D41;
+    color: whitesmoke;
+}
+
+#comentarios{
+    height: 200px;
+    
+    overflow: scroll;
+}
+
+.plantilla_comentario{
+    background-color: rgba(245, 245, 245, 0.24);
+    margin: 10px;
+    text-align: start;
+
+    border-radius: 15px;
+    padding: 20px;
+    color: whitesmoke;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.26);
+}
+.seccion_comentar{
+    /*display: none;*/
+    margin-top: 30px;
+}
+#comentario_texto{
+    border: none;
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*Pie de paginaaa*/
+
+footer{
+    background-color: #667D41;
+    height: 40vh;
+    align-content: center;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+#redes_sociales{
+    margin: 10px;
+    font-size: 1.5em;
+}
+#redes_sociales a{
+    margin: 3px;
+}
+#redes_sociales a:hover{
+    text-shadow: 0 0 10px rgba(245, 245, 245, 0.651); 
+    transition: text-shadow 0.3s ease; 
+    color: whitesmoke;
+}
+
+
+#contacto p{
+    margin: 2px;
+    font-size: 1.2em;
+}
+
+
+#info_desarrollador{
+    margin-top: 35px;
+    font-size: 0.8em;
+}
+
+
+#overlay {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  z-index: 5; /* Debajo del panel de información */
+  backdrop-filter: blur(2px); /* Opcional: desenfoque */
+}
+
+/* Bloquear scroll de fondo */
+body.bloqueado {
+  overflow: hidden;
+}
