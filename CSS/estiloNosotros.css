@@ -65,7 +65,7 @@
 .contenido_texto{
 
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: transparent;
@@ -76,12 +76,109 @@
     
 }
 
+/*informacion*/
+
+
 #titulo_bienvenida{
     font-weight: bold;
     padding: 50px;
+
+    font-size: 1.3em;
 }
 
-#texto_restaurante{
+.texto_restaurante{
     text-align: justify;
     padding: 20px;
 }
+
+.texto_restaurante p{
+    margin-top: 12px;
+}
+
+
+.banner{
+    width: 100%;
+    height: 70px;
+    align-content: center;
+
+    background-image: url('../assets/carrusel/315_Thai_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: whitesmoke;
+}
+
+.banner p{
+    background-color: rgba(40, 40, 40, 0.596);
+    width: 100%;
+    height: 100%;
+    align-content: center;
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h4{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+#ficha{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#ficha img{
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151);
+}
+
+.misionVision{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+
+    color: black;
+    background: whitesmoke;
+
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.434);
+}
+
+.misionVision:hover{
+    transform: scale(1.05);
+}
+
+.misionVision p{
+    margin: 20px;
+}
+
+.misionVision h3{
+    font-size: 1.4em;
+    text-align: center;
+    margin: 7px;
+}
+
+.contacto{
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 10px;
+}
+
+.contacto p{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
