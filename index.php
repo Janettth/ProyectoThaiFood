@@ -8,7 +8,9 @@ include("PHP/conexion.php");
 <head>
   <meta charset="UTF-8">
   <title>Panel de Base de Datos</title>
+  <link rel="icon" href="assets/Bandera2.png" type="image/x-icon">
   <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="stylesheet" href="CSS/estiloSplash.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +22,16 @@ include("PHP/conexion.php");
 
 <body>
 
+  <div class="intro">
+    <h1 class="logo_header">
+
+      <span class="logo"></span> 
+
+      <span class="logo"><img src="assets/logo2.png" alt="" width="80%"></span>
+
+    </h1>
+  </div>
+
   <div id="contenedor_principal">
     <header>
       <div id="logo">
@@ -29,7 +41,7 @@ include("PHP/conexion.php");
       <nav>
         <ul>
           <li><a href="index.php">Menú</a></li>
-          <li><a href="#">Ubicaciones</a></li>
+          <li><a href="ubicaciones.php">Ubicaciones</a></li>
           <li><a href="nosotros.php">Nosotros</a></li>
           
           <?php if (isset($_SESSION['usuario_id'])): ?>
@@ -37,7 +49,7 @@ include("PHP/conexion.php");
             <li><a id="btn_cerrar_sesion" href="PHP/cerrar_sesion.php">Cerrar sesión</a></li>
           <?php else: ?>
             <!-- Si el usuario no ha iniciado sesión -->
-            <li><a id="btn_iniciar_sesion" href="InicioSesion.html">Iniciar sesión</a></li>
+            <li><a id="btn_iniciar_sesion" href="InicioSesion.php">Iniciar sesión</a></li>
           <?php endif; ?>
         </ul>
       </nav>
@@ -133,6 +145,30 @@ include("PHP/conexion.php");
       <p>(656) 345 0098</p>
     </div>
 
+    <hr>
+
+    <div class="mapa_sitio">
+
+        <div class="cont_mapa">
+            <h3>Thai Food</h3>
+            <a href="index.php">Menú</a>
+            <a href="nosotros.php">Nosotros</a>
+        </div>
+
+        <div class="cont_mapa">
+            <h3>Información</h3>
+            <a href="ubicaciones.php">Lugares</a>
+            <a href="nosotros.php">Contacto</a>
+        </div>
+
+        <div class="cont_mapa">
+            <h3>Formularios</h3>
+            <a href="InicioSesion.php">Iniciar Sesión</a>
+            <a href="registro.php">Cerrar Sesión</a>
+        </div>
+        
+    </div>
+
     <div id="info_desarrollador">
       <p>Creado por: Janeth Guadalupe Castañeda Romero</p>
     </div>
@@ -143,6 +179,7 @@ include("PHP/conexion.php");
   
 </body>
 
-
+<script src="JS/splash.js"></script>
 <script src="JS/funciones.js"></script>
+
 </html>

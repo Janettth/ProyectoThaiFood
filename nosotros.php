@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link rel="icon" href="assets/Bandera2.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="stylesheet" href="CSS/estiloNosotros.css">
     <script src="https://kit.fontawesome.com/f22edbe064.js" crossorigin="anonymous"></script>
@@ -17,7 +18,7 @@
     <nav>
       <ul>
         <li><a href="index.php">Menú</a></li>
-        <li><a href="#">Ubicaciones</a></li>
+        <li><a href="ubicaciones.php">Ubicaciones</a></li>
         <li><a href="nosotros.php">Nosotros</a></li>
         
         <?php if (isset($_SESSION['usuario_id'])): ?>
@@ -25,7 +26,7 @@
           <li><a id="btn_cerrar_sesion" href="PHP/cerrar_sesion.php">Cerrar sesión</a></li>
         <?php else: ?>
           <!-- Si el usuario no ha iniciado sesión -->
-          <li><a id="btn_iniciar_sesion" href="InicioSesion.html">Iniciar sesión</a></li>
+          <li><a id="btn_iniciar_sesion" href="InicioSesion.php">Iniciar sesión</a></li>
         <?php endif; ?>
       </ul>
     </nav>
@@ -130,6 +131,30 @@
     <div id="contacto">
       <p>thaifood@gmail.com</p>
       <p>(656) 345 0098</p>
+    </div>
+
+    <hr>
+
+    <div class="mapa_sitio">
+
+        <div class="cont_mapa">
+            <h3>Thai Food</h3>
+            <a href="index.php">Menú</a>
+            <a href="nosotros.php">Nosotros</a>
+        </div>
+
+        <div class="cont_mapa">
+            <h3>Información</h3>
+            <a href="ubicaciones.php">Lugares</a>
+            <a href="nosotros.php">Contacto</a>
+        </div>
+
+        <div class="cont_mapa">
+            <h3>Formularios</h3>
+            <a href="InicioSesion.php">Iniciar Sesión</a>
+            <a href="registro.php">Cerrar Sesión</a>
+        </div>
+        
     </div>
 
     <div id="info_desarrollador">
