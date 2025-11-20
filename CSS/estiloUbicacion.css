@@ -1,0 +1,75 @@
+.contenedor_locaciones{
+    background-color: #667D41;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.354);
+
+    width: 50%;
+    height: auto;
+    margin: 10px;
+
+    border-radius: 25px;
+}
+
+.ubicacion{
+    /*background-color: beige;*/
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info_ubicacion{
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 25px;
+    padding: 20px;
+    align-content: center;
+}
+
+.info_ubicacion h3{
+    margin: 15px;
+}
+
+.link_web{
+    margin: 20px;
+}
+.link_web a{
+    text-decoration: none;
+    color: #667D41;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.link_web a:hover{
+    text-decoration:underline;
+}
+
+.mapa_ubicacion{
+    background-color: whitesmoke;
+    margin: 5px;
+    height: 50vh;
+    padding: 10px;
+    align-content: center;
+    border-radius: 25px;
+}
+
+.mapa_ubicacion p{
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+#texto_ubicaciones{
+    padding: 10px;
+    margin: 10px;
+
+    color:#667D41;
+}
+
+#texto_ubicaciones h3{
+    margin: 10px;
+}
+
+#texto_ubicaciones img{
+    width: 20%;
+    margin: 20px;
+}

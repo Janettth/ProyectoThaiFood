@@ -18,6 +18,6 @@ if ($resultado->num_rows > 0) {
           </div>";
   }
 } else {
-  echo "<p>No hay comentarios aún. ¡Sé el primero en opinar!</p>";
+  echo "<p  style='color: whitesmoke; text-align: center;'>No hay comentarios aún. ¡Sé el primero en opinar!</p>";
 }
 ?>

@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Playfair", serif;
+    
 }
 body{
     background-color: whitesmoke;
@@ -16,8 +16,7 @@ header{
     display:grid;
     grid-template-columns: 40% 60%;
     align-content: center;
-
-    font-family: "Playfair", serif;
+    font-family: 'Playfair', serif;
     
 }
 
@@ -80,6 +79,8 @@ ul li a:hover{
 
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.541);
     padding: 30px;
+
+    font-family: 'Playfair', serif;
 }
 
 #texto_bienvenida p{
@@ -103,6 +104,7 @@ ul li a:hover{
     margin-bottom: 20px;
     text-align: center;
     align-content: center;
+    font-family: 'Playfair', serif;
 }
 
 .separador img{
@@ -117,7 +119,6 @@ ul li a:hover{
 }
 
 #contenedor_principal{
-    /*font-family: "Lato", sans-serif;*/
 
     width: 100vw;
     height: auto;
@@ -126,7 +127,7 @@ ul li a:hover{
 
     display: grid;
     place-items: center;
-  
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -313,6 +314,8 @@ ul li a:hover{
     overflow: scroll;
 }
 
+
+
 .plantilla_comentario{
     background-color: rgba(245, 245, 245, 0.24);
     margin: 10px;
@@ -324,9 +327,10 @@ ul li a:hover{
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.26);
 }
 .seccion_comentar{
-    /*display: none;*/
+    display: none;
     margin-top: 30px;
 }
+
 #comentario_texto{
     border: none;
     width: 100%;
@@ -345,10 +349,12 @@ ul li a:hover{
 
 footer{
     background-color: #667D41;
-    height: 40vh;
+    height: auto;
     align-content: center;
     text-align: center;
     color: whitesmoke;
+    padding: 35px;
+    font-family: 'Playfair', serif;
     
 }
 
@@ -393,4 +399,46 @@ footer{
 /* Bloquear scroll de fondo */
 body.bloqueado {
   overflow: hidden;
+}
+
+
+hr{
+    color: whitesmoke;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mapa_sitio{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.cont_mapa{
+    width: 100%;
+    margin: 20px;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.cont_mapa a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.cont_mapa h3{
+    font-weight: bold;
+    margin: 10px;
+}
+.cont_mapa a:hover{
+    text-shadow: 0 0 10px rgb(255, 255, 255); 
+  transition: text-shadow 0.3s ease; 
 }
